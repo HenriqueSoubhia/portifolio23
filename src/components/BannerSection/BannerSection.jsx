@@ -19,7 +19,7 @@ const BannerSection = () => {
               text={"Developer"}
             ></ReactTypingEffect>
           </h1>
-          <p>Meu nome é Henrique Soubhia, sou web developer</p>
+          <p>Desenvolvedor Front-End, aprimorando desempenho, acessibilidade e usabilidade para impulsionar a excelência web em sua empresa.</p>
           <div className="btn-container">
             <a
               href="https://github.com/HenriqueSoubhia"

@@ -1,4 +1,5 @@
 @use '../../styles/variables'
+@use '../../styles/mixins'
 
 .navbar
     position: absolute
@@ -25,6 +26,9 @@
 
     ul
         display: flex
+
+        @include mixins.mobile
+            display: none
 
         a
             &:hover

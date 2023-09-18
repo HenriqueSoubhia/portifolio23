@@ -23,7 +23,7 @@ const cards = [
 
 const SkillSection = () => {
   return (
-    <section className="skill-section">
+    <section id="skill" className="skill-section">
       <div className="skill-section-container">
         <h2>Habilidades e Projetos</h2>
         {cards &&

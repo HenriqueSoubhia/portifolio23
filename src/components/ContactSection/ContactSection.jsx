@@ -16,23 +16,27 @@ const ContactSection = () => {
       email: email,
     };
 
-    emailjs
-      .send(
-        "service_hh68x8g",
-        "template_mmpk2dg",
-        templateParams,
-        "VZufU4TkjCtbVTQMJ"
-      )
-      // .then((response) => {
-      //   console.log("Email sent successfully:", response.status, response.text);
-      // })
-      // .catch((error) => {
-      //   console.error("Email sending error:", error);
-      // });
+    emailjs.send(
+      "service_hh68x8g",
+      "template_mmpk2dg",
+      templateParams,
+      "VZufU4TkjCtbVTQMJ"
+    );
+
+    setName("");
+    setEmail("");
+    setMessage("");
+
+    // .then((response) => {
+    //   console.log("Email sent successfully:", response.status, response.text);
+    // })
+    // .catch((error) => {
+    //   console.error("Email sending error:", error);
+    // });
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="contact-section-container">
         <div>
           <h2>Entre em contato</h2>
@@ -40,6 +44,7 @@ const ContactSection = () => {
         <div>
           <form onSubmit={handlerSubmit}>
             <input
+              required
               type="text"
               placeholder="Seu Nome"
               value={name}
@@ -48,6 +53,7 @@ const ContactSection = () => {
               }}
             />
             <input
+              required
               type="email"
               placeholder="Seu Email"
               value={email}
@@ -56,13 +62,15 @@ const ContactSection = () => {
               }}
             />
             <textarea
+              required
               name=""
               placeholder="Sua Mensagem"
-              value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-            ></textarea>
+            >
+              {message}
+            </textarea>
             <button type="submit">Enviar</button>
           </form>
         </div>

@@ -4,6 +4,7 @@ import ContactSection from "../../components/ContactSection/ContactSection";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import SkillSection from "../../components/SkillSection/SkillSection";
+import TopButton from "../../components/TopButton/TopButton";
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
       <AboutSection />
       <SkillSection />
       <ContactSection />
+
+      <TopButton />
       <Footer />
     </>
   );

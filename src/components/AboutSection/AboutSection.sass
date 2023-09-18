@@ -1,4 +1,5 @@
 @use '../../styles/variables'
+@use '../../styles/mixins'
     
     
 .about-section
@@ -9,11 +10,21 @@
     margin: 0 auto
     padding: 140px 0
 
+    @include mixins.mobile
+        padding: 28px
+        flex-direction: column-reverse
+
+
     .text-container
         width: 60%
-
+        @include mixins.mobile
+            width: 100%
     .img-container
         width: 35%
+        display: flex
+        justify-content: center
+        @include mixins.mobile
+            width: 100%
 
     .me
         width: 100%
@@ -21,6 +32,9 @@
 
     h2
         font-size: 4rem
+        margin-bottom: 16px
+        @include mixins.mobile
+            font-size: 2rem
 
     p
         margin-bottom: 16px

@@ -1,4 +1,5 @@
 @use '../../styles/variables'
+@use '../../styles/mixins'
     
 .footer
     padding: 80px 0
@@ -17,9 +18,17 @@
 
         >div
             width: 50%
+            @include mixins.mobile
+                width: 100%
+
+        @include mixins.mobile
+            flex-direction: column
 
     .canvas-container
         padding-right: 20px 
+        
+        @include mixins.mobile
+            padding: 0
 
 
     .info-container
@@ -28,6 +37,10 @@
         justify-content: center
         padding-bottom: 40px
         align-items: center
+
+        @include mixins.mobile
+            flex-direction: column
+            text-align: center
 
         ul
             display: flex
@@ -54,6 +67,10 @@
         align-items: center
         padding: 40px 0 
         justify-content: space-between
+
+        
+        @include mixins.mobile
+            flex-direction: column
 
         h4
             font-size: 32px

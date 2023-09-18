@@ -31,8 +31,7 @@ const Footer = () => {
                   <h4>Contato</h4>
                 </li>
                 <li>+55 11 99625-0147</li>
-                <li>+55 11 99625-0147</li>
-                <li>+55 11 99625-0147</li>
+                <li>soubhiahenrique0@gmail.com</li>
               </ul>
             </div>
             <div className="social-container">

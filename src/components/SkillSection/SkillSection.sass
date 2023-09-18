@@ -1,4 +1,5 @@
 @use '../../styles/variables'
+@use '../../styles/mixins'
 
 .skill-section
     padding: 140px 0
@@ -10,16 +11,25 @@
         display: flex
         flex-direction: column
 
+        @include mixins.mobile
+            padding: 28px
+
         >h2
-            font-size: 60px
+            font-size: 4rem
             color: #fff
             margin-bottom: 48px
+            @include mixins.mobile
+                font-size: 2rem
+
 
     .img-container
         font-size: 400px
         display: flex
         align-items: center
         justify-content: center
+
+        @include mixins.mobile
+            display: none
 
     .skill-card
         display: flex
@@ -28,18 +38,23 @@
         width: 100%
         margin-bottom: 48px
 
+        @include mixins.mobile
+            justify-content: center
+
         &:nth-child(odd)
             flex-direction: row-reverse
-            
-
         .skill-card-content
             background-color: #fff
             width: 500px
             padding: 50px
+            @include mixins.mobile
+                padding: 32px
 
     h4
-        font-size: 50px
+        font-size: 3rem
         margin-bottom: 16px
+        @include mixins.mobile
+            font-size: 2rem
 
     p
         margin-bottom: 16px
