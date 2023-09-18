@@ -1,0 +1,58 @@
+@use '../../styles/variables'
+
+.skill-section
+    padding: 140px 0
+    background-color: lighten(variables.$dark-blue,20)
+
+    &-container
+        max-width: variables.$max-width
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+
+        >h2
+            font-size: 60px
+            color: #fff
+            margin-bottom: 48px
+
+    .img-container
+        font-size: 400px
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .skill-card
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 48px
+
+        &:nth-child(odd)
+            flex-direction: row-reverse
+            
+
+        .skill-card-content
+            background-color: #fff
+            width: 500px
+            padding: 50px
+
+    h4
+        font-size: 50px
+        margin-bottom: 16px
+
+    p
+        margin-bottom: 16px
+
+    ul
+        margin-bottom: 16px
+        list-style: circle
+        margin-left: 20px
+
+        li
+            border-bottom: 1px solid black
+            padding: 12px 0
+            width: 100%
+
+    .btn
+        width: 100%
