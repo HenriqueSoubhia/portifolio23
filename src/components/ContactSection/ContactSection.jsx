@@ -63,14 +63,12 @@ const ContactSection = () => {
             />
             <textarea
               required
-              name=""
               placeholder="Sua Mensagem"
+              value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-            >
-              {message}
-            </textarea>
+            />
             <button type="submit">Enviar</button>
           </form>
         </div>

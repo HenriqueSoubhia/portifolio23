@@ -6,7 +6,7 @@ const CanvasComponent = ({args}) => {
 
 
   return (
-    <Canvas>
+    <Canvas style={{ width: "400px", height: "400px" }}>
       <Mesh args={args}/>
       <OrbitControls enableZoom={false} />
     </Canvas>

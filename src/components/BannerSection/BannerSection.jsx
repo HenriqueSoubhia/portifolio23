@@ -4,7 +4,6 @@ import "./BannerSection.sass";
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-
 const BannerSection = () => {
   return (
     <section className="banner-section">
@@ -15,11 +14,13 @@ const BannerSection = () => {
             <ReactTypingEffect
               speed={100}
               typingDelay={500}
-              ReactTypingEffect
               text={"Developer"}
-            ></ReactTypingEffect>
+            />
           </h1>
-          <p>Desenvolvedor Front-End, aprimorando desempenho, acessibilidade e usabilidade para impulsionar a excelência web em sua empresa.</p>
+          <p>
+            Desenvolvedor Front-End, aprimorando desempenho, acessibilidade e
+            usabilidade para impulsionar a excelência web em sua empresa.
+          </p>
           <div className="btn-container">
             <a
               href="https://github.com/HenriqueSoubhia"
@@ -39,9 +40,7 @@ const BannerSection = () => {
             </a>
           </div>
         </div>
-        <div>
-          <CanvasComponent args={[3.5, 3.5, 3.5]} />
-        </div>
+        <CanvasComponent args={[3.5, 3.5, 3.5]} />
       </div>
     </section>
   );
