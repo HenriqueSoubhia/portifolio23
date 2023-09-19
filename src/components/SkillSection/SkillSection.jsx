@@ -8,18 +8,6 @@ import Firebase from "/projeto-firebase.png";
 
 const cards = [
   {
-    title: "HTML5 e CSS 3",
-    p1: "Neste projeto, recriei o layout do vídeo 'Como é o HTML e CSS de um Estagiário?' utilizando HTML e CSS.",
-    p2: "O objetivo foi praticar minhas habilidades em front-end e reproduzir fielmente o design apresentado.",
-    icon: Layout,
-    link: "https://henriquesoubhia.github.io/treino-layout/",
-    list: [
-      "HTML, com as boas praticas de SEO",
-      "CSS, flexbox, grid e @media",
-      "Layout responsivo",
-    ],
-  },
-  {
     title: "SASS",
     p1: "Este projeto foi desenvolvido como parte do curso 'SASS e SCSS do básico ao avançado + Projetos'",
     p2: "Com o objetivo de dominar o SASS e aprimorar as habilidades de estruturação de projetos de forma mais profissional e expansiva.",
@@ -32,7 +20,7 @@ const cards = [
     ],
   },
   {
-    title: "React e React Router",
+    title: "React e Firebase",
     p1: "Neste projeto, desenvolvi um aplicativo de lista de tarefas (Todo App) com funcionalidade CRUD (Create, Read, Update, Delete)",
     p2: "Utilizando o React como framework front-end. O Firebase é usado como banco de dados em tempo real para armazenar as tarefas",
     icon: Firebase,
@@ -41,6 +29,18 @@ const cards = [
       "Atualização em tempo real",
       "React com boas praticas",
       "Firebase como banco de dados",
+    ],
+  },
+  {
+    title: "HTML5 e CSS 3",
+    p1: "Neste projeto, recriei o layout do vídeo 'Como é o HTML e CSS de um Estagiário?' utilizando HTML e CSS.",
+    p2: "O objetivo foi praticar minhas habilidades em front-end e reproduzir fielmente o design apresentado.",
+    icon: Layout,
+    link: "https://henriquesoubhia.github.io/treino-layout/",
+    list: [
+      "HTML, com as boas praticas de SEO",
+      "CSS, flexbox, grid e @media",
+      "Layout responsivo",
     ],
   },
 ];
