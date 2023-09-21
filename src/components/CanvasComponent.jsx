@@ -6,7 +6,7 @@ const CanvasComponent = ({args}) => {
 
 
   return (
-    <Canvas style={{ width: "400px", height: "400px" }} gl={{ antialias: true }}>
+    <Canvas style={{ width: "100%", height: "400px" }} gl={{ antialias: true }}>
       <ambientLight intensity={0.6} color="white" />
       <directionalLight position={[5, 5, 5]} color="white" />
       <Mesh args={args}/>

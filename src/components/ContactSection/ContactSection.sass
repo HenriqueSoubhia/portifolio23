@@ -26,8 +26,11 @@
             flex-direction: column-reverse
 
     h2
-        font-size: 60px
+        font-size: 4rem
         text-align: end
+        margin-bottom: 16px
+        @include mixins.mobile
+            font-size: 2rem
 
     form
         width: 100%
