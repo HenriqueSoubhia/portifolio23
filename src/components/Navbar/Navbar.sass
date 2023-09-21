@@ -2,9 +2,14 @@
 @use '../../styles/mixins'
 
 .navbar
-    position: absolute
+    position: fixed
     top: 0
     width: 100%
+    z-index: 1000
+    transition: .5s
+    
+    &.navbar-down
+        background-color: variables.$dark-blue
 
     &-container
         display: flex
@@ -13,7 +18,7 @@
         max-width: variables.$max-width
         margin: 0 auto
         
-    a
+    a,p
         color: white
         transition: .3s
         padding: 20px

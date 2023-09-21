@@ -13,7 +13,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 
 import { SiReactrouter } from "react-icons/si";
 
-import {DiSass} from 'react-icons/di'
+import { DiSass } from "react-icons/di";
 
 const skills = [
   {
@@ -50,26 +50,24 @@ const AboutSection = () => {
   return (
     <section id="about" className="about-section">
       <div className="img-container">
-        <img className="me" src={Eu} alt="" />
+        <img src={Eu} alt="" />
       </div>
       <div className="text-container">
-        <p>Sobre</p>
-        <h2>Frase bem bem bem legal, uhul top</h2>
+        <h2>Sobre</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          labore cupiditate fugiat officiis neque quis recusandae illo enim
-          iste! Eaque cupiditate quis quod harum asperiores nemo quaerat, hic
-          sint. Libero.
+          Olá, sou Henrique Soubhia, um desenvolvedor web dedicado à arte da
+          construção digital. Minha maior motivação é a satisfação de dar vida a
+          ideias e projetos através da programação.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          labore cupiditate fugiat officiis neque quis recusandae illo enim
-          iste! Eaque cupiditate quis quod harum asperiores nemo quaerat, hic
-          sint. Libero.
+          Com uma mente aberta para desafios e uma paixão por aprender, estou em
+          constante evolução. Além do desenvolvimento web, compartilho meu
+          conhecimento para tornar a programação mais acessível e inspirar
+          outros a explorar esse mundo digital.
         </p>
         <div className="skills-container">
           {skills.map((skill, i) => (
-            <SkillIcon key={i} skill={skill}/>
+            <SkillIcon key={i} skill={skill} />
           ))}
         </div>
       </div>

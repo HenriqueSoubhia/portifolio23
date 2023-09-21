@@ -2,7 +2,7 @@
 @use '../../styles/mixins'
     
 .contact-section
-    padding: 140px 0
+    padding: 140px 16px
     background-color: variables.$dark-blue
     color: #ECEDEF
     width: 100%
@@ -23,10 +23,11 @@
                 width: 100%
 
         @include mixins.mobile
-            flex-direction: column
+            flex-direction: column-reverse
 
     h2
         font-size: 60px
+        text-align: end
 
     form
         width: 100%

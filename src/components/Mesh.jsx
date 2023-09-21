@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
+import { Group } from "three";
 
 const Mesh = ({ args }) => {
   const meshRef = useRef();
@@ -11,11 +12,10 @@ const Mesh = ({ args }) => {
     meshRef.current.rotation.y -= 0.01;
   });
 
-
   return (
     <mesh ref={meshRef}>
       <boxGeometry args={args} />
-      <meshBasicMaterial color="white" />
+      <meshStandardMaterial  color="skyblue" />
     </mesh>
   );
 };

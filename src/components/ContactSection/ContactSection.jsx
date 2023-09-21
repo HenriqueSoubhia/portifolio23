@@ -39,9 +39,6 @@ const ContactSection = () => {
     <section id="contact" className="contact-section">
       <div className="contact-section-container">
         <div>
-          <h2>Entre em contato</h2>
-        </div>
-        <div>
           <form onSubmit={handlerSubmit}>
             <input
               required
@@ -71,6 +68,9 @@ const ContactSection = () => {
             />
             <button type="submit">Enviar</button>
           </form>
+        </div>
+        <div>
+          <h2>Entre em contato</h2>
         </div>
       </div>
     </section>

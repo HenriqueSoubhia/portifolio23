@@ -2,7 +2,7 @@
 @use '../../styles/mixins'
 
 .skill-section
-    padding: 140px 0
+    padding: 140px 16px
     background-color: lighten(variables.$dark-blue,20)
 
     &-container
@@ -25,30 +25,33 @@
         display: flex
         align-items: center
         justify-content: center
+        width: 50%
 
         img
-            width: 600px
+            width: 100%
 
         @include mixins.mobile
             display: none
 
     .skill-card
+
+        padding: 50px
+        background-color: #fff
         display: flex
-        align-items: center
-        justify-content: space-between
+        gap: 32px
+        justify-content: center
         width: 100%
-        margin-bottom: 48px
+        margin-bottom: 32px
 
         @include mixins.mobile
+            padding: 32px
             justify-content: center
 
         &:nth-child(odd)
             flex-direction: row-reverse
         .skill-card-content
-            background-color: #fff
-            width: 500px
-            padding: 50px
-
+            width: 50%
+            max-width: 500px
             img
                 width: 100%
                 display: none
@@ -57,7 +60,8 @@
                     display: block
 
             @include mixins.mobile
-                padding: 32px
+
+                width: 100%
 
     h4
         font-size: 3rem

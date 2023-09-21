@@ -1,12 +1,30 @@
+import { useEffect,useState } from "react";
 import "./Navbar.sass";
 
 const Navbar = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  console.log(scrollY)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <nav className="navbar">
+    <nav className={scrollY >= 500 ? "navbar navbar-down" : "navbar"}>
       <div className="navbar-container">
-        <a href="#" className="brand">
+        <p className="brand">
           Henrique <span>Soubhia</span>
-        </a>
+        </p>
 
         <ul>
           <li>
