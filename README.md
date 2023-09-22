@@ -20,7 +20,7 @@ Meu objetivo é continuar aprimorando minhas habilidades e explorar o mundo do d
 
 ## SEO do site
 
-<img scr="/lightHouse.png"/>
+![lighthouse do site](lightHouse.png)
 
 ## Contato
 
