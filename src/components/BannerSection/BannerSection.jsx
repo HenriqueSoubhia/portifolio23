@@ -3,6 +3,7 @@ import CanvasComponent from "../CanvasComponent";
 import "./BannerSection.sass";
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const BannerSection = () => {
   return (
@@ -41,6 +42,9 @@ const BannerSection = () => {
           </div>
         </div>
         <CanvasComponent args={[3.5, 3.5, 3.5]} />
+      </div>
+      <div className="down-arrow">
+        <MdOutlineKeyboardArrowDown />
       </div>
     </section>
   );

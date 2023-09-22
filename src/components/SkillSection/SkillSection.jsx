@@ -54,7 +54,7 @@ const SkillSection = () => {
           cards.map((card, i) => (
             <div key={i} className="skill-card">
               <div className="skill-card-content">
-                <h4>{card.title}</h4>
+                <h3>{card.title}</h3>
                 <p>{card.p1}</p>
                 <p>{card.p2}</p>
                 <img src={card.icon} alt={card.title} />

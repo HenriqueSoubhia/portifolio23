@@ -1,9 +1,13 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
-    
+
 .footer
     padding: 80px 0
-    
+
+    .bold
+        font-weight: bold
+
+
     &-container
         margin: 0 auto
         max-width: variables.$max-width
@@ -28,17 +32,16 @@
         display: flex
         justify-content: center
         margin-top: -100px
-        
+
         @include mixins.mobile
             display: none
 
-
     .info-container
         display: flex
-        border-bottom: 1px solid #aaa
         justify-content: center
         padding-bottom: 40px
         align-items: center
+        border-bottom: 1px solid #aaa 
 
         @include mixins.mobile
             flex-direction: column
@@ -52,34 +55,28 @@
             @include mixins.mobile
                 width: 100%
 
-            h4
-                font-size: 32px
-
             li
-                margin-bottom: 16px 
+                margin-bottom: 16px
                 word-break: break-all
 
             a
-                color: gray
+                color: #252525
                 transition: .3s
-                
-                &:hover
-                    color: #5f5f5f    
 
-            
+                &:hover
+                    color: #003050
 
     .social-container
         display: flex
         align-items: center
-        padding: 40px 0 
+        padding: 40px 0
         justify-content: space-between
 
-        
         @include mixins.mobile
             flex-direction: column
 
         h4
-            font-size: 32px
+            font-size: 28px
 
         >div
             display: flex
@@ -93,12 +90,9 @@
             &:hover
                 color: variables.$dark-blue
 
-
-
-
     .footer-bottom
         display: flex
         justify-content: space-between
         width: 100%
         border-top: 1px solid #aaa
-        padding: 40px 0 
+        padding: 40px 0

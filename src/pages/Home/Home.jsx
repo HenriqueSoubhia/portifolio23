@@ -14,7 +14,6 @@ const Home = () => {
       <AboutSection />
       <SkillSection />
       <ContactSection />
-
       <TopButton />
       <Footer />
     </>

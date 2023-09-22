@@ -50,7 +50,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="about-section">
       <div className="img-container">
-        <img src={Eu} alt="" />
+        <img src={Eu} alt="Foto de Henrique Soubhia" />
       </div>
       <div className="text-container">
         <h2>Sobre</h2>

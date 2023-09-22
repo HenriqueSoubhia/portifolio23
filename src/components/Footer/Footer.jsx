@@ -8,11 +8,14 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="canvas-container">
-            <CanvasComponent args={[3, 3, 3]}/>
+            <CanvasComponent args={[3, 3, 3]} />
           </div>
           <div>
             <div className="info-container">
               <ul>
+                <li>
+                  <p className="bold">Navegação</p>
+                </li>
                 <li>
                   <a href="#">Home</a>
                 </li>
@@ -28,19 +31,27 @@ const Footer = () => {
               </ul>
               <ul>
                 <li>
-                  <h4>Contato</h4>
+                  <p className="bold">Contato</p>
                 </li>
                 <li>+55 11 99625-0147</li>
                 <li>soubhiahenrique0@gmail.com</li>
               </ul>
             </div>
             <div className="social-container">
-              <h4>Social</h4>
+              <p className="bold">Social</p>
               <div>
-                <a href="">
+                <a
+                  href="https://github.com/HenriqueSoubhia"
+                  aria-label="Github"
+                  target="_blank"
+                >
                   <AiFillGithub />
                 </a>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/henrique-soubhia/"
+                  aria-label="Linkedin"
+                  target="_blank"
+                >
                   <AiFillLinkedin />
                 </a>
               </div>

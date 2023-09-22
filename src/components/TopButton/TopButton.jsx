@@ -20,7 +20,7 @@ const TopButton = () => {
   return (
     <>
       {scrollY >= 500 && (
-        <a href="#" className="btn-top">
+        <a href="#" className="btn-top" aria-label="Botão top">
           <MdKeyboardArrowUp />
         </a>
       )}
