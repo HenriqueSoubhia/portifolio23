@@ -18,6 +18,10 @@ Sou Henrique Soubhia, um desenvolvedor entusiasta que acredita que a programaç�
 
 Meu objetivo é continuar aprimorando minhas habilidades e explorar o mundo do desenvolvimento Full-Stack. Estou comprometido em criar soluções excepcionais e compartilhar conhecimento para tornar a programação acessível a todos.
 
+## SEO do site
+
+<img scr="/lightHouse.png"/>
+
 ## Contato
 
 Sinta-se à vontade para entrar em contato comigo em [soubhihenrique0@gmail.com] ou visitar meu perfil no [GitHub](https://github.com/HenriqueSoubhia) para ver mais projetos.
