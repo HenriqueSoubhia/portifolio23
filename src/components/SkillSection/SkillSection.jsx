@@ -1,10 +1,8 @@
 import "./SkillSection.sass";
-import { AiFillHtml5 } from "react-icons/ai";
-import { SiReactrouter } from "react-icons/si";
 
-import Layout from "/projeto-html.png";
-import Sass from "/projeto-sass.png";
-import Firebase from "/projeto-firebase.png";
+import Layout from "/projeto-html.webp";
+import Sass from "/projeto-sass.webp";
+import Firebase from "/projeto-firebase.webp";
 
 const cards = [
   {

@@ -1,6 +1,6 @@
 import SkillIcon from "../SkillIcon/SkillIcon";
 import "./AboutSection.sass";
-import Eu from "/eu.jpg";
+import Eu from "/eu.webp";
 
 import {
   BiLogoReact,
