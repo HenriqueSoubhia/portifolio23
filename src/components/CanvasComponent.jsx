@@ -4,6 +4,8 @@ import { OrbitControls } from '@react-three/drei'
 
 const CanvasComponent = ({args}) => {
 
+  
+
 
   return (
     <Canvas style={{ width: "80%", height: "400px" }} gl={{ antialias: true }}>
